@@ -1,27 +1,111 @@
 body {
     margin: 0px;
     font-family: 'Minecraft', sans-serif;
-
+    
 }
-
+/* yellow FFD316 */
 
 @font-face {
     font-family: 'Minecraft';
-    src: url('fonts/Minecraft.ttf') format('truetype');
+    src: url("../fonts/Minecraft.ttf") format('truetype');
+}
+
+.nav-container {
+    height: 100%;
+    background-color: #FFD316;
 }
 
 nav {
-    background-color: rgb(0, 136, 255);
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-self: center;
 }
 
 nav a {
+    font-size: xx-large;
+
     text-decoration: none;
     margin: 20px;
-
-
     padding: 10px;
-    background-color: aqua;
+    padding-bottom: 5px;
+
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
+
+nav a:link {
+  color: rgb(0, 0, 0);
+}
+nav a:visited {
+  color: rgb(0, 0, 0);
+}
+nav a:hover {
+  color: rgb(183, 183, 183);
+}
+nav a:active {
+  color: yellow;
+}
+
+.under-nav-image-container {
+    background-image: url("../img/mcBackround1.png");
+    background-size: cover;
+    height: 300px;
+}
+
+
+img {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+.dropbtn {
+    background-color: #ff0000;
+    color: rgb(0, 0, 0);
+    padding: 0px; /* ------------------------ */
+    font-size: xx-large;
+    font-family: 'Minecraft';
+    border: none;
+    cursor: pointer;
+}
+
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+} */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    
+    margin: 0px;
+    padding: 0px;
+
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #bb1212}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
