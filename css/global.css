@@ -1,22 +1,25 @@
 body {
     margin: 0px;
     font-family: 'Minecraft', sans-serif;
-    
+    image-rendering: pixelated;
 }
 /* yellow FFD316 */
 
 @font-face {
     font-family: 'Minecraft';
-    src: url("../fonts/Minecraft.ttf") format('truetype');
+    src: url("../fonts/1_Minecraft-Regular.otf") format("truetype");
 }
+
+
 
 .nav-container {
     position: sticky;   /* makes it stick within its parent */
-  top: 0;             /* stick to the very top */
-  z-index: 1000;      /* keep it above other content */
-  background-color: #FFD316; /* keep background so content doesn't show through */
+    top: 0;             /* stick to the very top */
+    z-index: 1000;      /* keep it above other content */
+    background-color: #FFD316; /* keep background so content doesn't show through */
     height: 100%;
     background-color: #FFD316;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
 }
 
 .image-link {
@@ -117,10 +120,15 @@ nav a:hover {
 
 
 .under-nav-image {
-  background-image: url("../img/mcBackround1.png");
-  height: 500px;                 /* controls section height */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("../img/mcBackround1.png");
+    height: 500px;                 /* controls section height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
+
+
+
 
 }

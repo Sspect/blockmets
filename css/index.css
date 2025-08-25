@@ -1,0 +1,40 @@
+body {
+    background-image: url('../img/minecraft-Textures/BlockSprite_pale-oak-planks.png');
+    background-size: 100px;
+
+}
+
+:root{
+      --bg:#0f1115; --card:#151822; --text:#e6e7ea; --muted:#9aa1aa;
+      --accent:#3aa9ff; --warn:#ffcc00; --hr:#2a2f3a; --label:#ffd34d;
+    }
+.rule-container{margin:0;padding:0;background:var(--bg);color:var(--text);max-width:920px;margin:40px auto;padding:0 20px}
+/* .card{background-color:} */
+
+header{padding:20px 24px;border-bottom:1px solid var(--hr);display:flex;gap:.6rem;align-items:center}
+
+
+
+.small a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(50, 50, 50);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
