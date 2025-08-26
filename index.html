@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
 </head>
+
 <body>
 
     <div class="nav-container">
@@ -16,8 +18,10 @@
             <div class="dropdown">
                 <button style="align-self: center;" class="dropbtn">Map</button>
                 <div class="dropdown-content">
-                    <a href="http://oslo25.spillvert.no:25665/#blockmets2025:7154:0:1738:1500:0:0:0:0:perspective" target="_blank">BlueMap</a>
-                    <a href="https://www.chunkbase.com/apps/seed-map#seed=8120773545045283206&platform=java_1_21_6&dimension=overworld&x=6568&z=1189&zoom=0.126" target="_blank">Chunkbase</a>
+                    <a href="http://oslo25.spillvert.no:25665/#blockmets2025:7154:0:1738:1500:0:0:0:0:perspective"
+                        target="_blank">BlueMap</a>
+                    <a href="https://www.chunkbase.com/apps/seed-map#seed=8120773545045283206&platform=java_1_21_6&dimension=overworld&x=6568&z=1189&zoom=0.126"
+                        target="_blank">Chunkbase</a>
                 </div>
             </div>
             <a href="games.html">Games</a>
@@ -25,124 +29,309 @@
             <a href="https://linktr.ee/oslometgaming" target="_blank">Discord</a>
         </nav>
     </div>
-<div class="under-nav-image"></div>
+    <div class="under-nav-image"></div>
 
 
 
 
 
-
-
-
-
-<main class="rule-container">
     <div class="card">
-      <header>
-        <span class="emoji">📌</span>
-        <h1>Useful Commands on the Server</h1>
-      </header>
+        <!-- see <a href="#">rules</a> on how to get whitelisted, and use a minecraft client running version java 1.21.8 -->
+        <h1>ℹ️ Information about the Server</h1>
+        <!-- Audio Player for Server Info -->
+        <p><strong>⚠️ Warning: Audio version may be loud.</strong><br>
+        <div style="margin: 16px 0;">
+            <audio controls>
+                <source src="audio/web page info.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <h2>Connect to the server by doing the following:</h2>
+        <p>1. Get whitelisted by joining the <a href="https://linktr.ee/oslometgaming" target="_blank">Oslomet
+                Discord</a> and following the instructions in the minecraft chat channel.</p>
+        <p>2. Use a Java Minecraft client running version <strong>1.21.8</strong>.</p>
+        <p>
+            3. Connect to the server using the server address
+            <strong>survival.blockmets.no</strong>
+            <button
+                onclick="navigator.clipboard.writeText('survival.blockmets.no'); alert('Server address copied to clipboard!');"
+                style="margin-left:8px;">
+                Copy
+            </button>
+        </p>
 
-      <div class="intro">
-        Try typing these in <strong>Minecraft chat</strong> :hackpepe:
-      </div>
-
-      <!-- Web & Maps -->
-      <section>
-        <div class="heading"><span class="emoji">🌐</span><span>Web &amp; Maps</span></div>
-        <ul>
-          <li>/web → <a href="https://blockmets.no" target="_blank" rel="noopener noreferrer">Website</a></li>
-          <li>/map1 → <a href="https://www.chunkbase.com/apps/seed-map#seed=8120773545045283206&platform=java_1_21_6&dimension=overworld&x=6568&z=1189&zoom=0.126" target="_blank" rel="noopener noreferrer">Chunkbase Seed Map</a></li>
-          <li>/map2 → <a href="http://oslo25.spillvert.no:25665/#blockmets2025:7154:0:1738:1500:0:0:0:0:perspective" target="_blank" rel="noopener noreferrer">BlueMap Live Map</a></li>
-        </ul>
-      </section>
-
-      <!-- Homes -->
-      <section>
-        <div class="heading"><span class="emoji">🏠</span><span>Homes</span></div>
-        <ul>
-          <li>/sethome [name] → set a new home</li>
-          <li>/delhome [name] → delete one of your homes</li>
-          <li>/home [name] → teleport to a home</li>
-          <li>/homes → list your homes</li>
-        </ul>
-        <div class="note">⚠️ Each player can set <strong>up to 3 homes</strong>.</div>
-      </section>
-
-      <!-- Warps -->
-      <section>
-        <div class="heading"><span class="emoji">🚪</span><span>Warps</span></div>
-        <ul>
-          <li>/warp spawn</li>
-          <li>/warp games</li>
-          <li>/warp shops</li>
-        </ul>
-      </section>
-
-      <!-- Teleportation -->
-      <section>
-        <div class="heading"><span class="emoji">🌀</span><span>Teleportation</span></div>
-        <ul>
-          <li>/tpa [player] → request to teleport to a player</li>
-          <li>/tpahere [player] → request a player to teleport to you</li>
-          <li>/tpaccept → accept a teleport request</li>
-          <li>/tpdeny → deny a teleport request</li>
-        </ul>
-      </section>
-
-      <!-- Graves -->
-      <section>
-        <div class="heading"><span class="emoji">💀</span><span>Graves</span></div>
-        <p class="small">Grave boxes last for <strong>15 minutes</strong> before they break (items drop on the floor).</p>
-        <ul>
-          <li>/graves → allow other players to access your grave box</li>
-        </ul>
-      </section>
-
-      <!-- Hey That's Mine -->
-      <section>
-        <div class="heading"><span class="emoji">🔒</span><span>Hey That’s Mine</span></div>
-        <p class="small">
-          Docs: <a href="https://modrinth.com/mod/htm" target="_blank" rel="noopener noreferrer">modrinth.com/mod/htm</a><br/>
-          Containers locked by default include: chests, trapped chests, and furnaces.
+        <h2>🛠️ Non-Vanilla Features (No Mods Needed!)</h2>
+        <p>
+            The server uses <strong>server-side datapacks and mods</strong> to add extra features. You do
+            <strong>not</strong> need to install any mods to join—just use a regular Minecraft client!
         </p>
         <ul>
-          <li>/htm trust [name] global → trust a player for all your containers</li>
-          <li>/htm set PUBLIC → (next left-click) make a container public</li>
-          <li>/htm set PRIVATE → (next left-click) make a container private</li>
-          <li>/htm info → (next left-click) show info about a container</li>
-          <li>/htm persist → repeat the same action on multiple containers</li>
+            <li>
+                <strong>Decorative & Cosmetic:</strong>
+                <ul>
+                    <li>Player head drops (<a href="https://www.youtube.com/watch?v=Usb1mEIK_wQ"
+                            target="_blank">video</a>)</li>
+                    <li>Mini blocks</li>
+                    <li>Armor statues (<a href="https://www.youtube.com/watch?v=nV9-_RacnoI" target="_blank">video</a>)
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Convenience:</strong>
+                <ul>
+                    <li>Dragon drops Elytra and Dragon Egg</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Gameplay Changes:</strong>
+                <ul>
+                    <li>Husks drop sand</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Informative:</strong>
+                <ul>
+                    <li>Villager death messages (<a href="https://www.youtube.com/watch?v=Rm14Uvy0YpY"
+                            target="_blank">video</a>)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Vaulted End:</strong>
+                <br>
+                Vaulted End is a server-side mod that replaces Elytra item frames in End City Ships with Vaults and
+                Trial Spawners. This helps new players get Elytra and Shulker Shells even in an old End, without needing
+                to travel far.
+            </li>
+            <li>
+                <strong>Disable End:</strong>
+                <br>
+                Adds a gamerule to disable end portals. The End will open on a specific date so everyone can cooperate
+                on killing the dragon together.
+            </li>
+            <li>
+                <strong>Universal Shops:</strong>
+                <br>
+                Flexible, server-side trade shop mod. Works with vanilla clients—no mods needed! More info: <a
+                    href="https://modrinth.com/mod/universal-shops?version=1.21.8&loader=fabric"
+                    target="_blank">Universal Shops</a>
+            </li>
+            <li>
+                <strong>Hey That’s Mine:</strong>
+                <br>
+                Protect your containers (chests, furnaces, etc.) from theft. You can trust other players to access your
+                containers. See <a href="#htm-commands-htm">commands below</a> for how to use it.
+            </li>
         </ul>
-      </section>
 
-      <!-- Voice Chat -->
-      <section>
-        <div class="heading"><span class="emoji">🎤</span><span>Voice Chat</span></div>
-        <p class="small">
-          Docs: <a href="https://modrepo.de/minecraft/voicechat/wiki/commands" target="_blank" rel="noopener noreferrer">voicechat wiki / commands</a>
-        </p>
-        <ul>
-          <li>/voicechat → basic settings</li>
-          <li>/voicechat test → test your mic</li>
-        </ul>
-        <p class="small">ℹ️ <strong>Voice Chat is optional</strong> — you don’t need it to join the server.</p>
-      </section>
 
-      <!-- Fun -->
-      <section>
-        <div class="heading"><span class="emoji">🎲</span><span>Fun Commands</span></div>
-        <ul>
-          <li>/hat → wear the item in your hand as a hat</li>
-          <li>/random roll 1..6 → roll a dice 🎲</li>
-        </ul>
-      </section>
+        <h2>🛍️ Shops</h2>
+        <p>There are designated areas for building <a href="shops.html">shops</a>.</p>
 
-      <section class="intro small">
-      </section>
+        <h2>🎮 Minigames</h2>
+        <p>There are designated areas for building <a href="games.html">minigames</a>.</p>
     </div>
-  </main>
 
 
-<div style="height: 1000px;"></div> <!-- scrpll -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="card">
+        <h1>📌 Useful Commands on the Server</h1>
+
+        <p>Try typing these in <strong>Minecraft chat</strong></p>
+
+
+        <!-- Web & Maps -->
+        <section>
+            <h2>
+                🌐 Web & Maps
+            </h2>
+            <p>/web → <a href="https://blockmets.no" target="_blank" rel="noopener noreferrer">Website</a></p>
+            <p>/map1 → <a
+                    href="https://www.chunkbase.com/apps/seed-map#seed=8120773545045283206&platform=java_1_21_6&dimension=overworld&x=6568&z=1189&zoom=0.126"
+                    target="_blank" rel="noopener noreferrer">Chunkbase Seed Map</a></p>
+            <p>/map2 → <a href="http://oslo25.spillvert.no:25665/#blockmets2025:7154:0:1738:1500:0:0:0:0:perspective"
+                    target="_blank" rel="noopener noreferrer">BlueMap Live Map</a></p>
+        </section>
+
+        <!-- Homes -->
+        <section>
+            <h2>🏠 Homes</h2>
+            <p>/sethome [name] → set a new home</p>
+            <p>/home [name] → teleport to a home</p>
+            <p>/delhome [name] → delete one of your homes</p>
+            <p>/homes → list your homes</p>
+            <div class="note">⚠️ Each player can set <strong>up to 3 homes</strong>.</div>
+        </section>
+
+        <!-- Warps -->
+        <section>
+            <h2>🚪 Warps</h2>
+            <p>/warp spawn → teleport to the spawn point</p>
+            <p>/warp games → teleport to the games area</p>
+            <p>/warp shops → teleport to the shops area</p>
+        </section>
+
+        <!-- Teleportation -->
+        <section>
+            <h2>🌀 Teleportation</h2>
+            <p>/tpa [player] → request to teleport to a player</p>
+            <p>/tpahere [player] → request a player to teleport to you</p>
+        </section>
+
+        <!-- Graves -->
+        <section>
+            <h2>💀 Graves</h2>
+            <p class="small">Grave boxes last for <strong>15 minutes</strong> before they break (items drop on the
+                floor).</p>
+            <p>/graves → allow other players to access your grave box</p>
+        </section>
+
+        <!-- Hey That's Mine -->
+        <section id="htm-commands-htm">
+            <h2>🔒 Hey That’s Mine</h2>
+            <p class="small">
+                Docs: <a href="https://modrinth.com/mod/htm" target="_blank"
+                    rel="noopener noreferrer">modrinth.com/mod/htm</a><br />
+                Containers locked by default include: chests, trapped chests, and furnaces.
+            </p>
+            <p>/htm trust [name] global → trust a player for all your containers</p>
+            <p>/htm set PUBLIC → (next left-click) make a container public</p>
+            <p>/htm set PRIVATE → (next left-click) make a container private</p>
+            <p>/htm info → (next left-click) show info about a container</p>
+            <p>/htm persist → repeat the same action on multiple containers</p>
+        </section>
+
+        <!-- Voice Chat -->
+        <section>
+            <h2>🎤 Voice Chat</h2>
+            <p class="small">
+                Docs: <a href="https://modrepo.de/minecraft/voicechat/wiki/commands" target="_blank"
+                    rel="noopener noreferrer">voicechat wiki / commands</a>
+            </p>
+            <p>/voicechat → basic settings</p>
+            <p>/voicechat test → test your mic</p>
+            <p class="small">ℹ️ <strong>Voice Chat is optional</strong> — you don’t need it to join the server.</p>
+        </section>
+
+        <!-- Fun -->
+        <section>
+            <h2>🎲 Fun Commands</h2>
+            <p>/hat → wear the item in your hand as a hat 🧢</p>
+            <p>/random roll 1..6 → roll a dice 🎲</p>
+        </section>
+
+        </p>
+    </div>
+
+
+
+
+
+
+
+    <div class="card">
+        <h1>📜 Server Rules</h1>
+        <p><strong>⚠️ Warning: Audio version may be loud.</strong><br>
+            <!-- Audio Player -->
+            <div style="margin: 16px 0;">
+                <audio controls >
+                    <source src="audio/website audio rules.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </p>
+        <p>These rules may be adjusted as needed!</p>
+        <ol>
+            <li>
+                <hr>
+                <strong>Respect All Players</strong>
+                <br>
+                No harassment, hate speech, or bullying. Treat everyone with kindness.
+            </li>
+            <li>
+                <hr>
+                <strong>No Griefing</strong>
+                <br>
+                Don’t destroy or steal from other players’ builds or property.<br>
+                Staff can track block breaking and items taken from chests.
+            </li>
+            <li>
+                <hr>
+                <strong>Protect the Environment</strong>
+                <br>
+                Don’t cause excessive damage to the landscape (e.g., avoid leaving floating trees).
+            </li>
+            <li>
+                <hr>
+                <strong>Follow Staff & Appeal Process</strong>
+                <br>
+                Helpers and admins have the final say in-game. Respect their decisions.<br>
+                Not doing so may result in warnings, temporary bans, or permanent removal.<br>
+                If you disagree with a decision, you can appeal to <strong>OMG Board members</strong>.
+            </li>
+            <li>
+                <hr>
+                <strong>Report Issues</strong>
+                <br>
+                If you see someone breaking the rules, report it to a helper, admin, or board member.
+            </li>
+            <li>
+                <hr>
+                <strong>No Cheating or Hacking</strong>
+                <br>
+                Do <strong>not</strong> use hacked clients, x-ray, duplication glitches, or any mods that give an unfair
+                advantage.<br>
+                Breaking this rule will result in a <strong>ban</strong>.
+                <br><br>
+                <strong>✅ Allowed client-side mods:</strong>
+                <ul>
+                    <li>Lightmatica</li>
+                    <li>Simple autoclickers (not combat hacks)</li>
+                </ul>
+                <strong>🟥 Not allowed:</strong>
+                <ul>
+                    <li>X-ray or ore-finding mods</li>
+                    <li>Fly/Speed hacks</li>
+                    <li>Anything that automates combat or gives unfair PvP advantages</li>
+                </ul>
+            </li>
+            <li>
+                <hr>
+                <strong>How to Get Whitelisted</strong>
+                <br>
+                To get whitelisted, join the <a href="https://linktr.ee/oslometgaming" target="_blank">Oslomet
+                    Discord</a> and follow the instructions in the minecraft chat channel.
+            </li>
+        </ol>
+        <p>⬆️ If you have any suggestions, post them in Minecraft chat!</p>
+        <p>Thanks for reading,<br>
+            <strong>Happy gaming!</strong> 🎮
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
 </body>
+
 </html>

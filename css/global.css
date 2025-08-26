@@ -3,6 +3,7 @@ body {
     font-family: 'Minecraft', sans-serif;
     image-rendering: pixelated;
 }
+
 /* yellow FFD316 */
 
 @font-face {
@@ -13,10 +14,10 @@ body {
 
 
 .nav-container {
-    position: sticky;   /* makes it stick within its parent */
-    top: 0;             /* stick to the very top */
-    z-index: 1000;      /* keep it above other content */
-    background-color: #FFD316; /* keep background so content doesn't show through */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #FFD316;
     height: 100%;
     background-color: #FFD316;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
@@ -35,29 +36,30 @@ body {
 .image-link:hover {
     background-color: #dbdbdb00;
     outline: 0;
-    
+
 }
+
 .image-link:hover img {
     height: 80px;
-    
+
 }
 
 nav {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
-  font-size: xx-large;
-  text-decoration: none;
-  margin: 20px;
-  padding: 10px 16px;
-  background-color: #fff;
-  border-radius: 10px;
-  color: #000;
+    font-size: xx-large;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
 }
 
 nav a:hover {
@@ -66,69 +68,110 @@ nav a:hover {
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
 }
 
 .dropbtn {
-  background-color: #fff;
-  color: #000;
-  font-size: xx-large;
-  font-family: 'Minecraft', sans-serif;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 16px;
-  cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-size: xx-large;
+    font-family: 'Minecraft', sans-serif;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 16px;
+    cursor: pointer;
 }
 
 .dropdown:hover .dropbtn {
-    
-  outline: solid 5px #000;
+
+    outline: solid 5px #000;
     background-color: #dbdbdb;
 }
 
 .dropdown-content {
-  padding: 10px;
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  /* background-color: #01fc12a2; */
-  min-width: 230px;
-  /* box-shadow: 0px 8px 16px rgba(0,0,0,0.2); */
-  z-index: 1;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 230px;
+    z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 .dropdown-content a {
-  margin: 10px;
-  color: #000;
-  text-decoration: none;
-  display: block;
-  padding: 12px 16px;   
+    margin: 10px;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
 }
 
 .dropdown-content a:hover {
-  outline: solid 5px #000;
+    outline: solid 5px #000;
     background-color: #dbdbdb;
 }
 
+section {
+    margin: 20px 0;
+    border-top: 1px solid #eee;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
 
+h2 {
+    margin: auto;
+}
 
 .under-nav-image {
     background-image: url("../img/mcBackround1.png");
-    height: 500px;                 /* controls section height */
+    height: 500px;
+    /* controls section height */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     image-rendering: auto;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.537);
+
+
+
+}
+
+
+.card{
+    background-color: black;
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 60px 10px #000000e6;
+
+    color: #ffffff;
+}
 
 
 
 
+
+.card a:link {
+    color: rgb(0, 174, 255);
+}
+
+.card a:visited {
+    color: rgb(0, 174, 255);
+}
+
+.card a:hover {
+    color: rgb(108, 203, 255);
+}
+
+.card a:active {
+    color: rgb(108, 203, 255);
 }
