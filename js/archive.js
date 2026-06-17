@@ -23,7 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
             name: '2025-2026',
             mapImage: 'assets/img/Archives/maps/map-2025-2026.png',
             logo: 'assets/img/Archives/old-logos/logo-2025-2026.png',
-            worldDownload: '#',
+            worlddownload: {
+                full: 'https://drive.google.com/drive/folders/1vUkRuZwrBWL5s70ldE0F0ApXC95i6L6u',
+                small: 'https://drive.google.com/drive/folders/1-Gth7FXykHhNkD1HXJA2sVtciu4EIxWe',
+            },
             oldWebsite: 'https://sspect.github.io/blockmets-2025-2026/',
             summary: "A season with relatively few long-term active players, likely due to a lack of server-run events.",
             screenshots: [
@@ -57,12 +60,26 @@ document.addEventListener('DOMContentLoaded', () => {
 						</div>
 					</div>
 
-					<div>
-						<p class="mb-0">${escapeHtml(server.summary)}</p>
+                    <div class="row g-3 align-items-start">
+                        <div class="col-lg-8">
+                            <div>
+                                <p class="mb-0">${escapeHtml(server.summary)}</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card bg-body-tertiary border-0 h-100">
+                                <div class="card-body text-center d-grid gap-3">
+                                    <h3 class="h5 mb-0">Download</h3>
+                                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                                        ${renderDownloadButtons(server)}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 					</div>
 
-					<div class="d-flex flex-wrap gap-2 mt-auto">
-						${renderDownloadButton(server)}
+                    <div class="d-flex flex-wrap gap-2">
                         ${renderWebsiteButton(server)}
 						<button type="button" class="btn btn-outline-light" data-archive-popup="screenshots" data-archive-index="${index}">Screenshots</button>
 						<button type="button" class="btn btn-outline-light" data-archive-popup="whitelist" data-archive-index="${index}">Whitelist</button>
@@ -159,7 +176,25 @@ document.addEventListener('DOMContentLoaded', () => {
         return 'About';
     }
 
-    function renderDownloadButton(server) {
+    function renderDownloadButtons(server) {
+        if (server.worlddownload) {
+            const buttons = [];
+
+            if (server.worlddownload.small) {
+                buttons.push(`<a class="btn btn-primary" href="${escapeHtml(server.worlddownload.small)}" target="_blank" rel="noopener noreferrer">Small</a>`);
+            }
+
+            if (server.worlddownload.full) {
+                buttons.push(`
+						<span class="d-inline-block" title="Not available due to technical issues">
+							<button type="button" class="btn btn-primary" disabled aria-disabled="true">Full</button>
+						</span>
+					`);
+            }
+
+            return buttons.join('');
+        }
+
         if (!server.worldDownload || server.worldDownload === '#') {
             return '<button type="button" class="btn btn-primary" disabled>World download soon</button>';
         }
