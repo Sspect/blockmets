@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header shape */
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+
+/* BM */
+.tital-bm {
+    height: 50px;
+}
+
+
+/* Header background */
+.header {
+    background-image: url("../assets/gif/portal.gif");
+    background-size: 10%;
+    background-repeat: no-repeat;
+
+    background-image: linear-gradient(top bottom, rgba(0, 0, 0, 0.429), rgba(216, 18, 18, 0.379)), url("../assets/gif/portal.gif");
+}
+
