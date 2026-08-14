@@ -39,6 +39,25 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             whitelist: 'AriTheTimelord, PinkHoneyBee, Moist_Pyro, Sky08401, Nirentos, Zaptor_raptor, Fjordh3ksa, Iithiiliien, WeakSwan, Serkth, embermare, LaserChaser, Veamern, SicarioIIII, markuscharles, Databrus42, ooley, emaau, YouNeedTheraphy, Dawco, MrKomda, Sspect, oliver33311, Cia_grr, mmckalbert, RockBoxFire, heyy666, Madgimmy, iQuackLikeADuck, God_of_fishing, Stratos_06, Nola_Bunny, J_L1en, MagmaMage6, Nico_Hero, VioletBrokeAgain, SZYUI, bummbelbee, jeghaterleague, hhwea, scorpiotic, Llama_Legacy, LadyYavanna2, Sadrith_Aron, Xcer, ConanQT',
         },
+        {
+            name: 'Summer break 2026',
+            mapImage: 'assets/img/Archives/maps/16414371-projectorianmap_l.webp',
+            logo: 'assets/img/Archives/old-logos/blockmets-summer-mayhem-logo.png',
+            worlddownload: {
+                full: 'https://www.planetminecraft.com/blog/project-orian-map/',
+            },
+            oldWebsite: 'https://mayhem.blockmets.no/',
+            summary: "A season with relatively few long-term active players, likely due to a lack of server-run events.",
+            screenshots: [
+                'assets/img/Archives/screenshots-2025-2026/Screenshot 2026-06-05 232958.png',
+                'assets/img/Archives/screenshots-2025-2026/Screenshot 2026-06-05 232910.png',
+                'assets/img/Archives/screenshots-2025-2026/Screenshot 2026-06-06 003219.png',
+                'assets/img/Archives/screenshots-2025-2026/Screenshot 2026-06-06 003247.png',
+                'assets/img/Archives/screenshots-2025-2026/Screenshot 2026-06-06 003800.png',
+                'assets/img/Archives/screenshots-2025-2026/Screenshot 2026-06-06 003828.png',
+            ],
+            whitelist: 'AriTheTimelord, PinkHoneyBee, Moist_Pyro, Sky08401, Nirentos, Zaptor_raptor, Fjordh3ksa, Iithiiliien, WeakSwan, Serkth, embermare, LaserChaser, Veamern, SicarioIIII, markuscharles, Databrus42, ooley, emaau, YouNeedTheraphy, Dawco, MrKomda, Sspect, oliver33311, Cia_grr, mmckalbert, RockBoxFire, heyy666, Madgimmy, iQuackLikeADuck, God_of_fishing, Stratos_06, Nola_Bunny, J_L1en, MagmaMage6, Nico_Hero, VioletBrokeAgain, SZYUI, bummbelbee, jeghaterleague, hhwea, scorpiotic, Llama_Legacy, LadyYavanna2, Sadrith_Aron, Xcer, ConanQT',
+        },
     ];
 
     const archiveGrid = document.getElementById('archive-grid');
