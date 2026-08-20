@@ -1,5 +1,23 @@
+.header-background-overlay {
+	background-image: var(--header-overlay-image);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.header-background-overlay.header-background-overlay--has-image {
+	min-height: 100vh;
+}
+
+/* Header must not be nested inside the 100vh box, otherwise sticky-top only sticks within it; pull it visually back on top of the hero image instead */
+.header-background-overlay.header-background-overlay--has-image + .header-background {
+	margin-top: -100vh;
+}
+
+
 .header-background {
-	position: relative;
 	overflow: hidden;
 }
 
@@ -8,7 +26,7 @@
 	position: absolute;
 	inset: 0;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%), url("../assets/img/minecraft-Textures/portal.gif");
-	background-repeat: repeat;
+	background-repeat: repeat-x;
 	background-size: 192px 192px;
 	-webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 55%, rgba(0, 0, 0, 0) 100%);
 	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 55%, rgba(0, 0, 0, 0) 100%);
@@ -16,7 +34,7 @@
 	z-index: 0;
 }
 
-.header-background > * {
+.header-background>* {
 	position: relative;
 	z-index: 1;
 }

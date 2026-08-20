@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 			if (response.ok) {
 				headerElement.innerHTML = await response.text();
+				applyHeaderOverlayImage(headerElement);
 				setActiveHeaderLinkWithBee();
 			}
 		} catch (error) {
@@ -18,6 +19,26 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 	applyMinecraftTextureBackground();
 });
+
+function applyHeaderOverlayImage(headerElement) {
+	const overlayElement = headerElement.querySelector('.header-background-overlay');
+
+	if (!overlayElement) {
+		return;
+	}
+
+	const customImagePath = (headerElement.dataset.headerOverlayImage || '').trim();
+
+	if (!customImagePath) {
+		overlayElement.classList.remove('header-background-overlay--has-image');
+		overlayElement.style.removeProperty('--header-overlay-image');
+		return;
+	}
+
+	const resolvedImagePath = new URL(customImagePath, window.location.href).href;
+	overlayElement.classList.add('header-background-overlay--has-image');
+	overlayElement.style.setProperty('--header-overlay-image', `url("${resolvedImagePath}")`);
+}
 
 async function renderUnderConstructionNotice() {
 	if (!window.underConstruction || document.getElementById('underConstructionNotice')) {
