@@ -15,7 +15,7 @@ const htmlPage = [
 	'map.html',
 	'archive.html',
 ];
-const underConstruction = true;
+const underConstruction = false;
 
 // Expose settings for scripts loaded later.
 window.mcTexture = mcTexture;
