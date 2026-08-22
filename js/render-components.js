@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 			const response = await fetch('assets/html/header.html');
 
 			if (response.ok) {
-				headerElement.innerHTML = await response.text();
+				headerElement.insertAdjacentHTML('afterbegin', await response.text());
 				applyHeaderOverlayImage(headerElement);
 				setActiveHeaderLinkWithBee();
 			}
