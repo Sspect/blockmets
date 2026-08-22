@@ -10,17 +10,22 @@
     <link href="css/global.css" rel="stylesheet">
     <link href="css/texture-background.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
+    <style>
+        body.no-bold :where(h1, h2, h3, h4, h5, h6, strong, b) {
+            font-weight: 400;
+        }
+    </style>
     <script defer src="js/settings.js"></script>
     <script defer src="js/render-components.js"></script>
 </head>
 
-<body class="bg-body text-body">
-    <div id="header"></div>
+<body class="bg-body text-body no-bold">
+    <div id="header"><img src="assets/img/mc-backrounds/copper.png" alt=""></div>
 
     <div class="container py-5">
         <div class="p-4 p-md-5 mb-4 rounded-3 bg-body-tertiary border">
             <div class="col-lg-8 px-0">
-                <h1 class="display-1 fw-bold">BlockMets</h1>
+                <h1 class="display-1">BlockMets</h1>
                 <h2>BlockMets is a Minecraft survival multiplayer server funded by OsloMet Gaming</h2>
             </div>
         </div>
@@ -30,7 +35,7 @@
             <div class="col-lg-8 px-0">
 
                 <p>
-                    <strong>Warning audio version is loud:</strong><br>
+                    Warning audio version is loud:<br>
                     <audio controls>
                         <source src="assets/audio/SMP Server Rules..mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
@@ -71,7 +76,7 @@
                     Helpers and admins have the final say in-game. Respect their decisions.<br>
                     Not doing so may result in warnings, temporary bans, or permanent removal.<br>
                     If you disagree with a decision, you can appeal to
-                    <strong>OMG Board members</strong>.
+                    OMG Board members.
                 </p>
 
                 <hr>
@@ -88,7 +93,7 @@
                 <p>
                     Do not use hacked clients, x-ray, duplication glitches, or any mods
                     that give an unfair advantage.<br>
-                    Breaking this rule will result in a <strong>ban</strong>.
+                    Breaking this rule will result in a ban.
                 </p>
 
                 <h3>✅ Allowed client-side mods:</h3>
@@ -110,14 +115,115 @@
                 <p>
                     See the discord server for instructions on how to get whitelisted.
                 </p>
-
-                <hr>
-
             </div>
         </div>
     </div>
 
+    <div class="container py-5">
+        <div class="p-4 p-md-5 mb-4 rounded-3 bg-body-tertiary border">
+            <div class="col-lg-8 px-0">
+                <h1 class="mb-4">Minecraft Server Info</h1>
 
+
+                <h2 class="h4 mt-4">IP Address</h2>
+                <div class="bg-dark text-light rounded p-3 mb-4">
+                    <code class="text-light">survival.blockmets.no</code>
+                </div>
+
+                <h2 class="h4">The World</h2>
+                <ul>
+                    <li>
+                        Seed:
+                        <code>340883181811974</code>
+                    </li>
+
+                    <li>
+                        <a href="http://oslo25.spillvert.no:25665/#blockmets_2026_2027:0:0:0:1500:0:0:0:0:perspective"
+                            target="_blank">
+                            BlueMap</a> View a live map of the server.
+                    </li>
+
+                    <li>
+                        <a href="https://www.chunkbase.com/apps/seed-map#seed=340883181811974&platform=java_1_21_6&dimension=overworld&x=-137&z=-103&zoom=0.092"
+                            target="_blank" rel="noopener noreferrer">
+                            Chunkbase</a> find specific structures and biomes using the world seed.
+                    </li>
+                </ul>
+
+                <h2 class="h4 mt-4">Dimensions</h2>
+                <p>
+                    The Nether and End are disabled when the server launches.
+                </p>
+
+                <ul>
+                    <li>
+                        Nether opens:
+                        <span class="relative-time" data-timestamp="1787932800"></span>
+                    </li>
+
+                    <li>
+                        End opens:
+                        <span class="relative-time" data-timestamp="1788537600"></span>
+                    </li>
+                </ul>
+
+                <h2 class="h4 mt-4">Mods</h2>
+                <ul>
+                    <li><code>/sethome</code></li>
+                    <li><code>/warp</code></li>
+
+                    <li>
+                        <a href="https://modrinth.com/mod/universal-graves" target="_blank" rel="noopener noreferrer">
+                            Universal Graves
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://modrinth.com/mod/vaulted-end" target="_blank" rel="noopener noreferrer">
+                            Vaulted End
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://modrinth.com/mod/universal-shops" target="_blank" rel="noopener noreferrer">
+                            Universal Shops
+                        </a>
+                    </li>
+                </ul>
+
+                <h2 class="h4 mt-4">Settings</h2>
+                <ul>
+                    <li>
+                        Difficulty: Hard
+                    </li>
+                    <li>
+                        Villager zombification settings will be decided by a poll when the
+                        relevant mod is compatible.
+                    </li>
+                </ul>
+
+                <h2 class="h4 mt-4">Gamerules</h2>
+                <ul>
+                    <li>
+                        Fire spread: False
+                    </li>
+                    <li>
+                        Players sleeping percentage: 0
+                    </li>
+                </ul>
+
+                <h2 class="h4 mt-4">Locations</h2>
+                <ul class="mb-0">
+                    <li>
+                        Spawn:
+                        Not built yet. Currently located in an area around
+                        <code>0, 0</code>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
