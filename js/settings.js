@@ -10,6 +10,7 @@ const mcTexture = [
 const htmlPage = [
 	'index.html',
 	'about.html',
+	'projects.html',
 	'games.html',
 	'shops.html',
 	'map.html',
