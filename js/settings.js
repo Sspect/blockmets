@@ -1,7 +1,7 @@
 const mcTexture = [
 	'BlockSprite_pale-oak-planks.png',
 	'BlockSprite_stone.png',
-	'BlockSprite_target-block.png',
+	'craftingtable_top.jpg',
 	'BlockSprite_block-of-diamond.png',
 	'Cartography_Table.png',
 	'BlockSprite_bookshelf.png',
